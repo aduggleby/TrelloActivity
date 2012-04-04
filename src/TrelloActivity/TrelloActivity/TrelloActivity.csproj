@@ -76,10 +76,10 @@
       <DependentUpon>main.less</DependentUpon>
     </Content>
     <Content Include="Global.asax" />
-    <None Include="assets\main.less">
+    <Content Include="assets\main.less">
       <Generator>LessGenerator</Generator>
       <LastGenOutput>main.css</LastGenOutput>
-    </None>
+    </Content>
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
