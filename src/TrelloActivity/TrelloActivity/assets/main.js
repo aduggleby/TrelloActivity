@@ -54,6 +54,7 @@ $(function () {
 function btnLoadActivity() {
     m_currentDate = m_lastDate;
     m_lastManual = m_lastDate;
+    $(".changed").removeClass("changed");
     loadActivity();
 }
 
@@ -145,13 +146,15 @@ function loadBoards() {
 
                         if (d > m_lastDate) m_lastDate = d;
 
+                        var actionid = r[idx].id;
                         var cardid = r[idx].data.card.id;
 
-                        if ($("#card-" + cardid).length == 0) {
+                        if ($("#action-" + actionid).length == 0) {
                             var act = $("<div/>").addClass("activity " + changed)
                                         .attr("cardid", cardid)
+                                        .attr("actionid", actionid)
                                         .attr("timestamp", d.getTime())
-                                        .attr("id", "card-" + cardid)
+                                        .attr("id", "action-" + actionid)
                                 .append("<div class='who'>" + r[idx].memberCreator.fullName + " <small>(" + displayNameForType(r[idx]) + ")</small></div>")
                                 .append("<div class='what'>" + displayContentForType(r[idx]) + "</div>")
                                 .append("<div class='when'>" + moment(d).format(DATE_FORMAT) + "</div>");
