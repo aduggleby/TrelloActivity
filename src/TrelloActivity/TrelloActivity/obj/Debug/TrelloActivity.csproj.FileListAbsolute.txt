@@ -1,0 +1,13 @@
+C:\Users\AD\Dropbox\Projects\Other\120404_TrelloActivity\src\TrelloActivity\TrelloActivity\bin\TrelloActivity.dll
+C:\Users\AD\Dropbox\Projects\Other\120404_TrelloActivity\src\TrelloActivity\TrelloActivity\bin\TrelloActivity.pdb
+C:\Users\AD\Dropbox\Projects\Other\120404_TrelloActivity\src\TrelloActivity\TrelloActivity\bin\Chello.dll
+C:\Users\AD\Dropbox\Projects\Other\120404_TrelloActivity\src\TrelloActivity\TrelloActivity\bin\EntityFramework.dll
+C:\Users\AD\Dropbox\Projects\Other\120404_TrelloActivity\src\TrelloActivity\TrelloActivity\bin\RestSharp.dll
+C:\Users\AD\Dropbox\Projects\Other\120404_TrelloActivity\src\TrelloActivity\TrelloActivity\bin\Newtonsoft.Json.dll
+C:\Users\AD\Dropbox\Projects\Other\120404_TrelloActivity\src\TrelloActivity\TrelloActivity\bin\Chello.pdb
+C:\Users\AD\Dropbox\Projects\Other\120404_TrelloActivity\src\TrelloActivity\TrelloActivity\bin\EntityFramework.xml
+C:\Users\AD\Dropbox\Projects\Other\120404_TrelloActivity\src\TrelloActivity\TrelloActivity\bin\Newtonsoft.Json.pdb
+C:\Users\AD\Dropbox\Projects\Other\120404_TrelloActivity\src\TrelloActivity\TrelloActivity\bin\Newtonsoft.Json.xml
+C:\Users\AD\Dropbox\Projects\Other\120404_TrelloActivity\src\TrelloActivity\TrelloActivity\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\AD\Dropbox\Projects\Other\120404_TrelloActivity\src\TrelloActivity\TrelloActivity\obj\Debug\TrelloActivity.dll
+C:\Users\AD\Dropbox\Projects\Other\120404_TrelloActivity\src\TrelloActivity\TrelloActivity\obj\Debug\TrelloActivity.pdb

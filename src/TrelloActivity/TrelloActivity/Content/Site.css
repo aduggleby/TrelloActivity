@@ -1,0 +1,73 @@
+#boards
+{
+    width: 250%;
+}
+
+#boards > div
+{
+    border-right: 1px solid black;
+    width: 270px;
+    float: left;
+}
+
+#boards .name
+{
+    font-size: large;
+    padding: 10px;
+    height: 40px;
+    background-color: #cdcdcd;
+}
+
+#boards .name small
+{
+    font-size: small;
+}
+
+#boards .activities
+{
+    font-size: medium;
+    padding: 10px;
+}
+
+.activity.changed
+{
+    color: Red;
+}
+
+.activity
+{
+    padding: 10px;
+    background-color: #efefef;
+    margin-bottom: 2px;
+}
+
+.activity .who
+{
+    font-weight: bold;
+}
+
+.activity .what
+{
+    font-size: small;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.activity .when
+{
+    font-style: italic;
+    font-size: small;
+}
+
+h1 small
+{
+    color: #cdcdcd;
+}
+
+body
+{
+    font-size: .85em;
+    font-family: "Trebuchet MS", Verdana, Helvetica, Sans-Serif;
+    color: #232323;
+    background-color: #fff;
+}

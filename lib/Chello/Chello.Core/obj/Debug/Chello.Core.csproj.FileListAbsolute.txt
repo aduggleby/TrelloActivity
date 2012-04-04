@@ -1,0 +1,9 @@
+C:\Users\AD\Dropbox\Projects\Other\120404_TrelloActivity\lib\Chello\Chello.Core\bin\Debug\Chello.dll
+C:\Users\AD\Dropbox\Projects\Other\120404_TrelloActivity\lib\Chello\Chello.Core\bin\Debug\Chello.pdb
+C:\Users\AD\Dropbox\Projects\Other\120404_TrelloActivity\lib\Chello\Chello.Core\bin\Debug\Newtonsoft.Json.dll
+C:\Users\AD\Dropbox\Projects\Other\120404_TrelloActivity\lib\Chello\Chello.Core\bin\Debug\RestSharp.dll
+C:\Users\AD\Dropbox\Projects\Other\120404_TrelloActivity\lib\Chello\Chello.Core\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\AD\Dropbox\Projects\Other\120404_TrelloActivity\lib\Chello\Chello.Core\bin\Debug\Newtonsoft.Json.xml
+C:\Users\AD\Dropbox\Projects\Other\120404_TrelloActivity\lib\Chello\Chello.Core\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\AD\Dropbox\Projects\Other\120404_TrelloActivity\lib\Chello\Chello.Core\obj\Debug\Chello.dll
+C:\Users\AD\Dropbox\Projects\Other\120404_TrelloActivity\lib\Chello\Chello.Core\obj\Debug\Chello.pdb

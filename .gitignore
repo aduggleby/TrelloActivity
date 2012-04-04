@@ -1,0 +1,14 @@
+build/
+release/
+
+config/db.config
+
+*.suo
+*.user
+
+# OS generated files #
+######################
+.DS_Store?
+ehthumbs.db
+Icon?
+Thumbs.db

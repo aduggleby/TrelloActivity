@@ -1,0 +1,12 @@
+C:\Users\AD\Dropbox\Projects\Other\120404_TrelloActivity\lib\Chello\Chello.Tests\bin\Debug\Chello.Tests.dll.config
+C:\Users\AD\Dropbox\Projects\Other\120404_TrelloActivity\lib\Chello\Chello.Tests\bin\Debug\Chello.Tests.dll
+C:\Users\AD\Dropbox\Projects\Other\120404_TrelloActivity\lib\Chello\Chello.Tests\bin\Debug\Chello.Tests.pdb
+C:\Users\AD\Dropbox\Projects\Other\120404_TrelloActivity\lib\Chello\Chello.Tests\bin\Debug\Chello.dll
+C:\Users\AD\Dropbox\Projects\Other\120404_TrelloActivity\lib\Chello\Chello.Tests\bin\Debug\RestSharp.dll
+C:\Users\AD\Dropbox\Projects\Other\120404_TrelloActivity\lib\Chello\Chello.Tests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\AD\Dropbox\Projects\Other\120404_TrelloActivity\lib\Chello\Chello.Tests\bin\Debug\Chello.pdb
+C:\Users\AD\Dropbox\Projects\Other\120404_TrelloActivity\lib\Chello\Chello.Tests\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\AD\Dropbox\Projects\Other\120404_TrelloActivity\lib\Chello\Chello.Tests\bin\Debug\Newtonsoft.Json.xml
+C:\Users\AD\Dropbox\Projects\Other\120404_TrelloActivity\lib\Chello\Chello.Tests\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\AD\Dropbox\Projects\Other\120404_TrelloActivity\lib\Chello\Chello.Tests\obj\Debug\Chello.Tests.dll
+C:\Users\AD\Dropbox\Projects\Other\120404_TrelloActivity\lib\Chello\Chello.Tests\obj\Debug\Chello.Tests.pdb
