@@ -65,11 +65,9 @@ function loadActivity() {
     var updates = "";
 
     if (m_lastManual != null) {
-        updates += "Last Manual: " + m_lastManual.toLocaleString();
+        updates += "Your last interaction: " + m_lastManual.toLocaleString();
     }
-    if (m_lastDate != null) {
-        updates += " Red are changes since: " + m_lastDate.toLocaleString();
-    }
+   
     $("#lastRefresh").html(updates);
     $("#boards").html('');
     m_boards = [];

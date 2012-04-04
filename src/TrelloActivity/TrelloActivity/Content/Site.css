@@ -61,7 +61,13 @@
 
 h1 small
 {
-    color: #cdcdcd;
+    color: #b4b4b4;
+    font-size: small;
+}
+
+h1 .refresh
+{
+    float: right;
 }
 
 body
