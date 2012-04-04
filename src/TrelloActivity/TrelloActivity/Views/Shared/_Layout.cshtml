@@ -3,10 +3,11 @@
 <head>
     <meta charset="utf-8" />
     <title>@ViewBag.Title</title>
-    <link href="@Url.Content("~/assets/main.less?v=" + v)" rel="stylesheet" type="text/css" />
     @{
         var v = TrelloActivity.Controllers.HomeController.Version;
     }
+    <link href="@Url.Content("~/assets/main.less?v=" + v)" rel="stylesheet" type="text/css" />
+   
     <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
     <script src="@Url.Content("~/assets/moment.min.js?v=" + v)"></script>
     <script src="https://api.trello.com/1/client.js?key=f1ef54ac786dfb4daf483e05ceb6c8c8"></script>
