@@ -36,9 +36,13 @@
 
 .activity
 {
+    -moz-border-radius: 10px; /* Firefox */
+    -webkit-border-radius: 10px; /* Safari, Chrome */
+    border-radius: 10px; /* CSS3 */
+  
     padding: 10px;
     background-color: #efefef;
-    margin-bottom: 2px;
+    margin-bottom: 10px;
 }
 
 .activity .who
