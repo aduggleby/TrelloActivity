@@ -1,11 +1,12 @@
-﻿@{
-    ViewBag.Title = "Trello Activity Board - R2";
+﻿@using TrelloActivity.Controllers;
+@{
+    ViewBag.Title = "Trello Activity Board - R" + HomeController.Version;
 }
 <div id="header">
     <div class="left">
         <h1>
             Trello Activity Dashboard</h1>
-        <small>Release 2 / 12-04-04 / @Html.ActionLink("About", "About")</small>
+        <small>Release @HomeController.Version / 12-04-04 / @Html.ActionLink("About", "About")</small>
     </div>
     <div class="center">
         <span id="user"></span>/ <span id="lastRefresh"></span>

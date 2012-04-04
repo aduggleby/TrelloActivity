@@ -9,11 +9,15 @@ namespace TrelloActivity.Controllers
 {
     public class HomeController : Controller
     {
-     
+        public static string Version
+        {
+            get { return ConfigurationManager.AppSettings["Version"]; }
+        }
+
 
         public HomeController()
         {
-        
+
         }
 
         public ActionResult Index()
