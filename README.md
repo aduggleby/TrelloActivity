@@ -1,10 +1,10 @@
 Trello Activity Board
 =============
 
-Needed a very simple way to see if there were changes on multiple boards. This app uses the Trello API to check for changes once a minute and displays them in red if the are new since the last manual refresh (or the first page load). 
+I needed a very simple way to see if there were changes on multiple [trello](http://trello.com) boards. This is my early alpha non-tested-much-at-all version of an app that does that.
 
-This is very very very barebones (there isn't even a link to the card yet) but it fulfills my purpose for now.
+Uses the Trello API to check for changes once a minute. Changes are highlighted in red (if they have occured since the last manual interaction, i.e. refresh button pressed or page load). 
 
-Any changes welcome, feedback also, but I can't promise I get to anything.
+This is *very very very* barebones (there isn't even a link to the card yet) but it did the job for me right now. Any changes welcome, feedback also, but I can't promise I get to anything. (Pull requests make me happy.)
 
-
+Site is running at: [http://trelloactivity.apphb.com](http://trelloactivity.apphb.com)
