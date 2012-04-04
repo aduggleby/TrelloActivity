@@ -38,6 +38,7 @@ $(function () {
 function loadActivity() {
 
     $("#boards").html('');
+    m_boards = [];
 
     m_currentDate = m_lastDate;
 
