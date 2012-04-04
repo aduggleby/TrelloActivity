@@ -5,7 +5,10 @@ var m_currentDate = null;
 var m_lastManual = null;
 
 var DATE_FORMAT = "YY-MM-DD HH:mm";
-
+var CARDTITLE_MAXLENGTH = 50;
+var COMMENT_MAXLENGTH = 100;
+var LISTTITLE_MAXLENGTH = 50;
+var BOARDTITLE_MAXLENGTH = 20;
 $(function () {
 
     $(".activity").live("click", onCardClicked);
@@ -73,7 +76,7 @@ function loadActivity() {
     }
 
     $("#lastRefresh").html(updates);
-    
+
     m_boards = [];
 
 
@@ -121,7 +124,7 @@ function loadBoards() {
             newBoard.addClass("board");
             newBoard.attr("id", "board-" + r.id);
             newBoard.attr("boardid", r.id);
-            newBoard.find(".name").html(r.name);
+            newBoard.find(".name").html(shorten(r.name, BOARDTITLE_MAXLENGTH));
             var activities = newBoard.find(".activities");
 
             $("#boards").append(newBoard);
@@ -131,7 +134,7 @@ function loadBoards() {
             '/boards/' + r.id + '/actions', {},
             function (r) {
                 for (var idx = 0; idx < r.length - 1; idx++) {
-                    
+
                     if (r[idx].data.card != null) {
                         var d = new Date(r[idx].date);
 
@@ -178,9 +181,31 @@ function displayContentForType(r) {
     var type = r.type
     switch (type) {
         case "createCard":
-        case "commentCard":
+            return "<emp>Card:</emp> " + shorten(r.data.card.name, CARDTITLE_MAXLENGTH);
+            break;
+
         case "updateCard":
+            var s = "";
+
+            var cardMoved = false;
+
+            if (r.data.listBefore != null && r.data.listAfter != null) {
+                cardMoved = r.data.listBefore.id != r.data.listAfter.id;
+            }
+
+            if (cardMoved) {
+                s += "<emp>Moved '" + shorten(r.data.listBefore.name, LISTTITLE_MAXLENGTH) + "' -> '" + shorten(r.data.listAfter.name, LISTTITLE_MAXLENGTH) + "'</emp><br/>";
+            }
+            
+            s += "<emp>Card:</emp> " + shorten(r.data.card.name, CARDTITLE_MAXLENGTH);
+            
+            return s;
+            break;
+
         case "commentCard":
+            return "<emp>Comment:</emp> " + shorten(r.data.text, COMMENT_MAXLENGTH) + "<br/>" +
+            "<emp>Card</emp> : " + shorten(r.data.card.name, CARDTITLE_MAXLENGTH);
+            break;
         case "addMemberToCard":
         case "removeMemberFromCard":
         case "updateCheckItemStateOnCard":
@@ -190,9 +215,9 @@ function displayContentForType(r) {
         case "removeChecklistFromCard":
         case "createList":
         case "updateList":
-            return "Card: " + r.data.card.name;
-            
+            return "";
             break;
+
 
     }
 
@@ -209,10 +234,6 @@ function displayNameForType(r) {
             break;
         case "updateCard":
             return "Updated";
-            break;
-
-        case "commentCard":
-            return "New Comment";
             break;
         case "addMemberToCard":
             return "Assigned";
@@ -253,22 +274,24 @@ function onCardClicked() {
     var boardid = $(this).closest(".board").attr("boardid");
 
     Trello.get(
-            '/boards/' + boardid + '/cards/' + cardid, 
-            { 
-                actions: "all", 
+            '/boards/' + boardid + '/cards/' + cardid,
+            {
+                actions: "all",
                 members: "true"
             },
             function (r) {
-
-                alert(r.url);
                 window.open(r.url, "_trello");
-
             },
             function (e) {
                 alert("Could not retrieve card. Sorry.");
             });
+}
 
-    
-    
-
+function shorten(t, i) {
+    if (t.length > i) {
+        return t.substring(0, i) + "...";
+    }
+    else {
+        return t;
+    }
 }

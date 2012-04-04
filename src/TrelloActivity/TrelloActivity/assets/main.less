@@ -1,0 +1,170 @@
+// http://www.colourlovers.com/palette/2094502/Chua
+			
+@orange1: #FFA051;
+@orange2: #BF8A5D;
+@orange3: #A6591A;
+@orange4: #FFB87C;
+@orange5: #FFCB9F;
+
+@blue1: #4769B7;
+@blue2: #4A5D89;
+@blue3: #173477;
+@blue4: #7795DB;
+@blue5: #91A8DB;
+
+@green1: #43D343;
+@green2: #4D9E4D;
+@green3: #168916;
+@green4: #72E972;
+@green5: #92E992;
+
+
+body
+{
+	padding: 0px;
+	margin: 0px;
+    font-size: .85em;
+    font-family: "Trebuchet MS", Verdana, Helvetica, Sans-Serif;
+    color: @blue1;
+    background-color: @blue5;
+}
+
+#boards > div
+{
+    border-right: 1px solid black;
+    width: 270px;
+    float: left;
+}
+
+#header
+{
+	background-color: @blue4;
+	color: white;
+	padding-left: 10px;
+	padding-right: 10px;
+
+	h1
+	{
+		padding: 0px;
+		margin: 0px;
+		line-height: 100%;
+	}
+
+	> div
+	{
+		display: inline-block;
+	}
+
+	.left
+	{
+	float: left;
+		width: 30%;
+	}
+
+	.center
+	{
+		float: left;
+		text-align: center;
+		margin-top: 10px;
+		width: 30%;
+	}
+
+	.right
+	{
+		float: right;
+		input
+		{
+			margin-left: 4px;
+		}
+	}
+}
+
+
+#boards 
+{
+	.name
+	{
+		text-align: center;
+		vertical-align: middle;
+		font-size: large;
+		padding: 10px;
+		height: 20px;
+		background-color: @blue2;
+		color: white;
+
+		small
+		{
+			font-size: small;
+		}
+	}
+
+	.activities
+	{
+		font-size: medium;
+		padding: 10px;
+	}
+}
+
+.activity
+{
+	&.changed
+	{
+		background-color: @blue3;
+		color: white;
+	}
+	
+    -moz-border-radius: 10px; /* Firefox */
+    -webkit-border-radius: 10px; /* Safari, Chrome */
+    border-radius: 10px; /* CSS3 */
+  
+    padding: 10px;
+    background-color: #efefef;
+    margin-bottom: 10px;
+
+	color: @blue3;
+
+	emp
+	{
+		font-style: italic;
+		font-weight: bold;
+	}
+
+	.who
+	{
+		font-weight: bold;
+	}
+
+	.what
+	{
+		font-size: small;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+
+	.when
+	{
+		font-style: italic;
+		font-size: small;
+	}
+}
+
+#about
+{
+
+	#container
+	{
+		
+		margin: auto;
+		margin-top: 40px;
+		width: 960px;
+		background-color: white;
+		border: 1px solid black;
+		padding: 30px;
+		-moz-border-radius: 10px; /* Firefox */
+		-webkit-border-radius: 10px; /* Safari, Chrome */
+		border-radius: 10px; /* CSS3 */  
+	}
+
+	color: black;
+
+}
