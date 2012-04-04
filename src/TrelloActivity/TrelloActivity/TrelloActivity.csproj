@@ -75,6 +75,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>main.less</DependentUpon>
     </Content>
+    <Content Include="assets\moment.min.js" />
     <Content Include="Global.asax" />
     <Content Include="assets\main.less">
       <Generator>LessGenerator</Generator>
