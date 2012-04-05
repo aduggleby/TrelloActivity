@@ -82,9 +82,8 @@ function loadActivity() {
 
 
     var boards = m_currentUser.idBoards;
-    var maxboards = boards.length;
-    var numboards = maxboards;
-    for (var i = 0; i < maxboards - 1; i++) {
+    var numboards = boards.length;
+    for (var i = 0; i < numboards; i++) {
 
         var boardID = boards[i];
 
@@ -98,7 +97,7 @@ function loadActivity() {
                     m_boards.push(r);
                 }
 
-                if (numboards == 1) {
+                if (numboards == 0) {
                     loadBoards();
                 }
 
@@ -134,7 +133,7 @@ function loadBoards() {
         Trello.get(
             '/boards/' + r.id + '/actions', {},
             function (r) {
-                for (var idx = 0; idx < r.length - 1; idx++) {
+                for (var idx = 0; idx < r.length; idx++) {
 
                     if (r[idx].data.card != null) {
                         var d = new Date(r[idx].date);
