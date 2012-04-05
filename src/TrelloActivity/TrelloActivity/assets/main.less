@@ -29,11 +29,13 @@ body
     background-color: @blue5;
 }
 
-#boards > div
+#boards 
 {
-    border-right: 1px solid black;
-    width: 270px;
-    float: left;
+	> div
+	{
+		display: table-cell;
+		border-right: 1px solid black;		
+	}
 }
 
 #header
@@ -122,6 +124,8 @@ body
     margin-bottom: 10px;
 
 	color: @blue3;
+	width: 270px;
+	
 
 	emp
 	{
