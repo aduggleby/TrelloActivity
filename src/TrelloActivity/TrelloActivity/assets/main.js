@@ -34,6 +34,12 @@ $(function () {
             function (u) {
                 m_currentUser = u;
 
+                if (getHash() == null) {
+                    $("#filter").html("No filter.");
+                } else {
+                    $("#filter").html("Filter: " + getHash());
+                }
+
                 $("#user").html("User: " + m_currentUser.fullName);
 
                 $("#autoRefresh").attr("checked", "checked");
@@ -80,7 +86,6 @@ function loadActivity() {
 
     m_boards = [];
 
-
     var boards = m_currentUser.idBoards;
     var numboards = boards.length;
     for (var i = 0; i < numboards; i++) {
@@ -94,7 +99,22 @@ function loadActivity() {
                 numboards--;
 
                 if (!r.closed) {
-                    m_boards.push(r);
+
+                    var addBoard = true;
+                    var hash = getHash();
+                    
+                    if (hash != null) {
+                        addBoard = false;
+                        if (r.desc != null) {
+                            if (r.desc.indexOf(hash) != -1) {
+                                addBoard = true;
+                            }
+                        }
+                    }
+
+                    if (addBoard) {
+                        m_boards.push(r);
+                    }
                 }
 
                 if (numboards == 0) {
@@ -198,9 +218,9 @@ function displayContentForType(r) {
             if (cardMoved) {
                 s += "<emp>Moved '" + shorten(r.data.listBefore.name, LISTTITLE_MAXLENGTH) + "' -> '" + shorten(r.data.listAfter.name, LISTTITLE_MAXLENGTH) + "'</emp><br/>";
             }
-            
+
             s += "<emp>Card:</emp> " + shorten(r.data.card.name, CARDTITLE_MAXLENGTH);
-            
+
             return s;
             break;
 
@@ -296,4 +316,14 @@ function shorten(t, i) {
     else {
         return t;
     }
+}
+
+function getHash() {
+    var hash = window.location.hash;
+    if (hash == null || hash == '#' || hash == '') return null;
+    return hash;
+}
+
+function getLinkTarget(link) {
+    return link.href.substring(link.href.indexOf('#') + 1);
 }
