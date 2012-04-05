@@ -7,6 +7,7 @@ I invested a little time in design and functionality, but it it still a very ear
 
 Newest features:
 
+- Filtering lists is now possible via hash tag
 - Cards can be clicked to get load trello.
 - Flickering during reload is gone.
 
